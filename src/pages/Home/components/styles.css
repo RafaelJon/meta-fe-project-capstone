@@ -1,0 +1,275 @@
+/* Hero styling */
+
+.hero-container {
+  display: flex;
+  height: 500px;
+  position: relative;
+  align-items: center;
+}
+
+.hero-main-container {
+  width: 45%;
+  height: 100%;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.hero-image-container {
+  left: 50%;
+  top: 0;
+  right: 48px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-grow: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+/* Highlights styling */
+
+.higlights-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 48px;
+  margin-top: 24px;
+}
+
+.food-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 5px 10px 1px grey;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.food-card-image {
+  position: relative;
+  height: 200px;
+}
+
+.food-card-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-card-content {
+  flex-grow: 1;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.food-card-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.food-card-heading h3 {
+  margin: 0;
+}
+
+.order-cta {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: auto;
+  cursor: pointer;
+  border-bottom: solid 2px white;
+  padding-bottom: 4px;
+  user-select: none;
+}
+
+.order-cta svg {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  transition: none;
+  user-select: none;
+}
+
+.order-cta:active {
+  border-bottom: solid 2px #495e57;
+}
+
+/* Testimonials styling */
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonies-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.testimony-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 12px;
+}
+
+.testimony-card:hover {
+  transform: scale(1.1);
+}
+
+.testimony-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimony-card-heading svg {
+  margin-left: 4px;
+  color: #f4ce14;
+  width: 25px;
+  height: 25px;
+}
+
+.testimony-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.testimony-profile-image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 4px;
+  border-radius: 9999px;
+  border: 2px solid black;
+}
+
+.testimony-profile-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+}
+
+/* About styling */
+
+.about-container {
+  display: flex;
+  height: 500px;
+  position: relative;
+  align-items: center;
+}
+
+.about-main-container {
+  width: 45%;
+  height: 100%;
+  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-image-container {
+  left: 50%;
+  top: 0;
+  right: 48px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-grow: 1;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media only screen and (max-width: 770px) {
+  .hero-container {
+    max-height: 350px;
+    color: rgb(73, 94, 87);
+    background-image: url(../../../../public/restaurantfood.jpg),
+      linear-gradient(to bottom, rgba(73, 94, 87, 1) 80%, white);
+    background-blend-mode: screen;
+    background-size: cover;
+  }
+
+  .hero-main-container {
+    width: 100%;
+    text-align: center;
+    align-items: unset;
+  }
+
+  .hero-image-container {
+    display: none;
+  }
+
+  .food-items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonies-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: start;
+    height: unset;
+    min-height: 550px;
+  }
+
+  .about-main-container {
+    width: 100%;
+    max-height: unset;
+    justify-content: start;
+  }
+
+  .about-image-container {
+    margin-top: 24px;
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    width: 100%;
+    height: 300px;
+  }
+}

@@ -1,29 +1,22 @@
 import React from "react";
 
 import "./styles.css";
+import { navigation } from "./constants";
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul className="nav">
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About</a>
-        </li>
-        <li>
-          <a>Menu</a>
-        </li>
-        <li>
-          <a>Reservations</a>
-        </li>
-        <li>
-          <a>Order Online</a>
-        </li>
-        <li>
-          <a>Login</a>
-        </li>
+    <nav className="nav-desktop-container">
+      <ul className="nav-desktop">
+        {navigation.map((nav, idx) => (
+          <li key={`main-nav-${idx}`}>
+            <a
+              href={nav.path}
+              className="nav-item"
+            >
+              {nav.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

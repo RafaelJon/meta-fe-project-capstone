@@ -1,0 +1,9 @@
+* {
+  font-family: "Karla", sans-serif;
+}
+
+.section-container {
+  max-width: 1024px;
+  padding: 48px 48px;
+  margin: auto;
+}
