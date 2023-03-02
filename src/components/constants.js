@@ -12,7 +12,7 @@ export const navigation = [
     name: "Menu"
   },
   {
-    path: "/reservations",
+    path: "/booking",
     name: "Reservations"
   },
   {

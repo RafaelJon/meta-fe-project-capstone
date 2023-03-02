@@ -25,11 +25,8 @@ const Hero = () => {
               traditional recipes served with a modern twist.
             </Pharagraph>
           </div>
-          <a>
-            <Button
-              text={"Reserve a table"}
-              onClick={() => console.log("reserved")}
-            />
+          <a href="/booking">
+            <Button text={"Reserve a table"} />
           </a>
         </div>
         <div className="hero-image-container">
