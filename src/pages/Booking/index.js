@@ -18,8 +18,11 @@ const Booking = () => {
 
   const submitForm = (formdata) => {
     if (submitAPI(formdata)) {
-      const bookingData = localStorage.getItem("bookingData");
-      localStorage.setItem("bookingData", [...bookingData, formdata]);
+      const bookingData = JSON.parse(localStorage.getItem("bookingData")) ?? [];
+      localStorage.setItem(
+        "bookingData",
+        JSON.stringify([...bookingData, formdata])
+      );
       navigate("/confirmed-booking");
     }
   };

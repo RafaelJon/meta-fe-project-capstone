@@ -11,6 +11,7 @@ const SideNavigation = ({ onClick }) => {
           width={30}
           style={{ margin: "auto" }}
           onClick={onClick}
+          aria-label="on click open side navigation"
         >
           <path
             fillRule="evenodd"

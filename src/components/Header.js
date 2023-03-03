@@ -78,6 +78,7 @@ const Header = () => {
             stroke="currentColor"
             width={30}
             onClick={() => setShow(false)}
+            aria-label="on click close side navigation"
           >
             <path
               strokeLinecap="round"
