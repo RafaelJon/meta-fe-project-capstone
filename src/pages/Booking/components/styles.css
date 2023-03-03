@@ -1,0 +1,57 @@
+.booking-hero-container {
+  margin-top: 80px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-image: url(../../../../public/restaurantfood.jpg),
+    linear-gradient(to bottom, rgb(80, 107, 98) 55%, white);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+}
+
+.booking-confirmed-container {
+  margin-top: 80px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url(../../../../public/restaurantfood.jpg),
+    linear-gradient(to bottom, rgb(80, 107, 98) 75%, rgb(59, 59, 59));
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container {
+  max-width: 320px;
+  margin: auto;
+  padding: 48px 40px 36px;
+  display: grid;
+  gap: 16px;
+  flex-direction: column;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
+
+.input-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  position: relative;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid #333333;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .form-container {
+    padding: 24px 20px 18px;
+  }
+}
